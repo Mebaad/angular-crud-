@@ -1,0 +1,83 @@
+<p>ote works!</p>
+<div class="container">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addNoteModel">Create Note<i
+      class="bi bi-file-plus"></i>
+
+  </button>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card card-body">
+        <h5>Angular CRUD</h5>
+        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, fugit!</p>
+        <div class="d-flex align-items-center"></div>
+        <span class="mx-3">
+          <i class="bi bi-pen" data-bs-toggle="modal" data-bs-target="#Editnotes"></i>
+        </span>
+        <span class="mx-3">
+          <i class="bi bi-trash"></i>
+        </span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Add Notes -->
+
+
+  <div class="modal fade" id="addNoteModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Add Daily Note</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Note Title</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Note Description</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add notes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Edit Notes -->
+
+
+  <div class="modal fade" id="Editnotes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Note</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Note Title</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Note Description</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Edit Notes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
